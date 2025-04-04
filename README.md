@@ -1,10 +1,9 @@
 # Validador de Correlatividades ;)
 
-----------
-
 ## Bienvenido/a a mi solución del Validador de Correlatividades!😃
 
 "Validador de Correlatividades" es un ejercicio introductorio de la materia Diseño de Sistemas de Información (DDSI) de la UTN FRBA.
+
 
 ### Enunciado
 
