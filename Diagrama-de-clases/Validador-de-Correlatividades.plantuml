@@ -1,0 +1,33 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+
+Inscripcion --> "*" Materia
+Inscripcion --> Alumno
+
+Alumno --> "*" Materia
+
+Materia --> "*" Materia
+
+
+
+class Alumno {
+	- materiasAprobadas : Set<Materia>
+
+	+ tieneMateriaAprobada(Materia) : boolean
+}
+
+class Materia {
+    - nombre : String
+    - materiasCorrelativas : Set<Materia>
+}
+
+class Inscripcion {
+    - materias : Set<Materia>
+    - alumno : Alumno
+
+    + aprobada() : boolean
+    + getMateriasCorrelativas() : Set<Materia>
+}
+
+@enduml
